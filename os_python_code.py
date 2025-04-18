@@ -8,7 +8,7 @@ from matplotlib.backends.backend_tkagg import FigureCanvasTkAgg
 class SimulationEngine:
     def __init__(self, disk_size=200):
         self.disk_size = disk_size
-        self.seek_time_per_unit = 1  # ms per unit distance
+        self.seek_time_per_unit = 1  
 
     def fcfs(self, queue, head):
         sequence = [head] + queue
